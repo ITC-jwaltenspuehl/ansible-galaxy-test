@@ -16,7 +16,7 @@
         key: https://download.docker.com/linux/centos/gpg
     - name: add docker repo
       dnf:
-        enablerepo: https://download.docker.com/linux/centos/docker-ce.repo
+        enablerepo: "https://download.docker.com/linux/centos/docker-ce.repo"
     - name: install docker-ce, docker-ce-cli and containerd.io
       dnf:
         name: "docker-ce docker-ce-cli containerd.io"
