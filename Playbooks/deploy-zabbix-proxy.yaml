@@ -3,6 +3,9 @@
 - name: Deploy Zabbix-Proxy-Container
   hosts: all
   tasks:
+    - name: Install Docker Module for Python
+      pip:
+        name: docker
     - name: Deploy Docker Image
       community.docker.docker_container:
         name: ZBX-PROXY
