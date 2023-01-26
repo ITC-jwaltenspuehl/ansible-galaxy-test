@@ -8,5 +8,5 @@
       state: started
       restart: true
       env:
-        ZBX_HOSTNAME: "{{ zabbix_hostname }}"
+        ZBX_HOSTNAME: TESTZP01
         ZBX_SERVER_HOST: mnt.itcompro.com
