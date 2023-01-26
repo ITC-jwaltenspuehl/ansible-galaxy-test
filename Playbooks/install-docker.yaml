@@ -1,0 +1,23 @@
+---
+
+- name: update all Hosts
+  hosts: all
+  tasks:
+    - name: install updates
+      yum:
+        name: "*"
+        state: latest
+- name: install docker-ce
+  hosts: all
+  tasks:
+    - name: add docker gpp key
+      rpm_key: 
+        state: present
+        key: https://download.docker.com/linux/centos/gpg
+    - name: add docker repo
+      yum:
+        name: https://download.docker.com/linux/centos/docker-ce.repo
+    - name: install docker-ce, docker-ce-cli and containerd.io
+      yum:
+        name: "docker-ce docker-ce-cli containerd.io"
+    
