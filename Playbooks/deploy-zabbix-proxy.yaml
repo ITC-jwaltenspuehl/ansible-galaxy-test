@@ -1,5 +1,6 @@
 ---
-- name: Create Zabbix Docker container
+
+- name: Deploy Zabbix-Proxy-Container
   hosts: all
   tasks:
     community.docker.docker_container:
