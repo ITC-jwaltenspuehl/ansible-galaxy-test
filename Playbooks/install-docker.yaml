@@ -4,7 +4,7 @@
   hosts: all
   tasks:
     - name: install updates
-      yum:
+      dnf:
         name: "*"
         state: latest
 - name: install docker-ce
@@ -15,10 +15,10 @@
         state: present
         key: https://download.docker.com/linux/centos/gpg
     - name: add docker repo
-      yum:
-        name: https://download.docker.com/linux/centos/docker-ce.repo
+      dnf:
+        enablerepo: https://download.docker.com/linux/centos/docker-ce.repo
     - name: install docker-ce, docker-ce-cli and containerd.io
-      yum:
+      dnf:
         name: "docker-ce docker-ce-cli containerd.io"
         state: latest
     - name: enable docker service
