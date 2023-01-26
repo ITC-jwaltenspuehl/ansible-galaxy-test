@@ -9,5 +9,5 @@
       state: started
       restart: true
       env:
-        ZBX_HOSTNAME: TESTZP01
-        ZBX_SERVER_HOST: mnt.itcompro.com
+        ZBX_HOSTNAME: "TESTZP01"
+        ZBX_SERVER_HOST: "mnt.itcompro.com"
