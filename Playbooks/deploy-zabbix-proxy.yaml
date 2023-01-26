@@ -9,7 +9,7 @@
     - name: Deploy Docker Image
       community.docker.docker_container:
         name: ZBX-PROXY
-        image: zabbix-proxy-sqlite3:ol-6.0-latest
+        image: zabbix/zabbix-proxy-sqlite3:ol-6.0-latest
         state: started
         restart: true
         env:
