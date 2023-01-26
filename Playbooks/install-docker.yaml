@@ -20,4 +20,16 @@
     - name: install docker-ce, docker-ce-cli and containerd.io
       yum:
         name: "docker-ce docker-ce-cli containerd.io"
-    
+        state: latest
+    - name: enable docker service
+      systemd:
+        name: docker
+        enabled: yes
+    - name: make rc.local executable
+      file: 
+        path: /etc/rc.d/rc.local
+        mode: '0755'
+    - name: run docker service
+      systemd:
+        name: docker
+        state: started
