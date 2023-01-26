@@ -1,5 +1,6 @@
 ---
   - name: Create Zabbix Docker container
+    hosts: all
     community.docker.docker_container:
       name: ZBX-PROXY
       image: zabbix-proxy-sqlite3:ol-6.0-latest
