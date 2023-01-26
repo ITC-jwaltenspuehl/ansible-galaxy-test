@@ -23,7 +23,7 @@
         update_cache: true
     - name: install docker-ce, docker-ce-cli and containerd.io
       dnf:
-        name: "docker-ce,docker-ce-cli,containerd.io,python39-pip"
+        name: "docker-ce,docker-ce-cli,containerd.io,python3-pip"
         state: latest
     - name: enable docker service
       systemd:
