@@ -12,6 +12,8 @@
         restart: true
         ports:
           - "25:25"
+          - "587:587"
+          - "2525:2525"
         env:
           MAILNAME: "{{ postfix_hostname }}"
           MYNETWORKS: "{{ postfix_networks }}"
