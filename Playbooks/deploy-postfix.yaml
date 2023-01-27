@@ -14,3 +14,4 @@
           MAILNAME: "{{ postfix_hostname }}"
           MYNETWORKS: "{{ postfix_networks }}"
           TZ: "Europe/Zurich"
+          USE_TLS: "no"
