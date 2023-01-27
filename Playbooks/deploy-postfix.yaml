@@ -10,6 +10,8 @@
         image: panubo/postfix
         state: started
         restart: true
+        ports:
+          - "25:25"
         env:
           MAILNAME: "{{ postfix_hostname }}"
           MYNETWORKS: "{{ postfix_networks }}"
