@@ -19,3 +19,4 @@
           MYNETWORKS: "{{ postfix_networks }}"
           TZ: "Europe/Zurich"
           USE_TLS: "no"
+          SMTPD_USERS: "relay:hYG2Ew67"
