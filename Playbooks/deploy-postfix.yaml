@@ -6,7 +6,7 @@
         name: docker
     - name: Deploy Docker Image
       community.docker.docker_container:
-        name: ZBX-PROXY
+        name: POSTFIX
         image: panubo/postfix
         state: started
         restart: true
