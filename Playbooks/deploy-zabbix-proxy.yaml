@@ -12,6 +12,9 @@
         image: zabbix/zabbix-proxy-sqlite3:ol-6.0-latest
         state: started
         restart: true
+        ports:
+          - "10050:10050"
+          - "10051:10051"
         env:
           ZBX_HOSTNAME: "{{ zabbix_hostname }}"
           ZBX_SERVER_HOST: "mnt.itcompro.com"
