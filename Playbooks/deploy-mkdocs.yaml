@@ -1,4 +1,4 @@
-- name: Deploy Postfix
+- name: Deploy mkdocs
   hosts: all
   tasks:
     - name: Install Docker Module for Python
