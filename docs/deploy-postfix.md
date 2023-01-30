@@ -5,6 +5,6 @@ It is only used to send mail from devices, which otherwise would need an O365 li
 
 ## Variables for Ansible
 
-'''bash
- postfix_hostname: <
- postfix_networks: <ALLOWED NETWORKS>
+''
+postfix_hostname: <HOSTNAME>
+postfix_networks: <ALLOWED NETWORKS>''
