@@ -1,9 +1,10 @@
 # Deploy Postfix Ansible Playbook
 
-This playbook is used to deploy and configure the Postfix Mail Relay.\
+This playbook is used to deploy and configure the Postfix Mail Relay.  
 It is only used to send mail from devices, which otherwise would need an O365 licesnse.
 
 ## Variables for Ansible
 
- postfix_hostname: <SERVERNAME>\
+'''bash
+ postfix_hostname: <
  postfix_networks: <ALLOWED NETWORKS>
